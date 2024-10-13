@@ -11,6 +11,12 @@ const randomProducts = [
     image: 'https://m.media-amazon.com/images/I/51LV0sheUdL._AC_SL1500_.jpg',
   },
   {
+    id: 9,
+    name: 'Hushy Ultra-snug (Blue)',
+    price: '£9.99',
+    image: 'https://m.media-amazon.com/images/I/41zuCrtgQJL._AC_SL1080_.jpg',
+  },
+  {
     id: 2,
     name: 'Earp plugs (Aqua)',
     price: '£9.99',
@@ -23,28 +29,10 @@ const randomProducts = [
     image: 'https://m.media-amazon.com/images/I/51bXjf0zbnL._AC_SL1500_.jpg',
   },
   {
-    id: 4,
-    name: 'Earp plugs (Purple)',
-    price: '£9.99',
-    image: 'https://m.media-amazon.com/images/I/41OOqMxMQgL._AC_.jpg',
-  },
-  {
     id: 5,
     name: 'Earp plugs (Skin)',
     price: '£9.99',
     image: 'https://m.media-amazon.com/images/I/51V1TDcwUrL._AC_SL1500_.jpg',
-  },
-  {
-    id: 6,
-    name: 'Hushy Ultra-snug (Black)',
-    price: '£9.99',
-    image: 'https://m.media-amazon.com/images/I/41PrNDmq3VL._AC_SL1080_.jpg',
-  },
-  {
-    id: 7,
-    name: 'Hushy Ultra-snug (Skin)',
-    price: '£9.99',
-    image: 'https://m.media-amazon.com/images/I/4182MRotQqL._AC_SL1080_.jpg',
   },
   {
     id: 8,
@@ -53,14 +41,26 @@ const randomProducts = [
     image: 'https://m.media-amazon.com/images/I/41apbjRziFL._AC_SL1080_.jpg',
   },
   {
-    id: 9,
-    name: 'Hushy Ultra-snug (Blue)',
+    id: 7,
+    name: 'Hushy Ultra-snug (Skin)',
     price: '£9.99',
-    image: 'https://m.media-amazon.com/images/I/41zuCrtgQJL._AC_SL1080_.jpg',
+    image: 'https://m.media-amazon.com/images/I/4182MRotQqL._AC_SL1080_.jpg',
+  },
+  {
+    id: 4,
+    name: 'Earp plugs (Purple)',
+    price: '£9.99',
+    image: 'https://m.media-amazon.com/images/I/41OOqMxMQgL._AC_.jpg',
+  },
+  {
+    id: 6,
+    name: 'Hushy Ultra-snug (Black)',
+    price: '£9.99',
+    image: 'https://m.media-amazon.com/images/I/41PrNDmq3VL._AC_SL1080_.jpg',
   },
   {
     id: 10,
-    name: 'Hushy Ultra-snug (Blue)',
+    name: 'Safe & Sleek Vegetable Chopper',
     price: '£14.99',
     image: 'https://m.media-amazon.com/images/I/71kziGhShQL._AC_SL1500_.jpg',
   },

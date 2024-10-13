@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
         <body className="bg-white">
           <SideBar />
           <header aria-label="Site Header" className="border-b border-gray-100">
-            <div className="bg-black p-2 text-center tracking-wider">FREE SHIPPING 📦 OVER 14$</div>
+            <div className="bg-black p-2 text-center tracking-wider">FREE SHIPPING,📦 USE COUPON: <span className="bg-gray-500 rounded-md pl-2 pr-2">KM324</span></div>
             <div className="mx-auto flex h-16 max-w-screen-2xl items-center justify-between sm:px-6 lg:px-8">
               <div className="flex items-center gap-4">
                 <button
@@ -50,16 +50,16 @@ export default function RootLayout({ children }) {
                     Home
                   </Link>
 
+                  <Link href="/products"
+                    className="block h-16 border-b-4 border-transparent leading-[4rem] hover:text-gray-700 hover:border-b-2 hover:border-gray-500"
+                  >
+                    Shop
+                  </Link>
                   <Link
                     href="/about"
                     className="block h-16 border-b-4 border-transparent leading-[4rem] hover:text-gray-700 hover:border-b-2 hover:border-gray-500"
                   >
                     Best Sellers
-                  </Link>
-                  <Link href="/products"
-                    className="block h-16 border-b-4 border-transparent leading-[4rem] hover:text-gray-700 hover:border-b-2 hover:border-gray-500"
-                  >
-                    Shop
                   </Link>
                   <Link href="/"
                     className="block h-16 border-b-4 border-transparent leading-[4rem] hover:text-gray-700 hover:border-b-2 hover:border-gray-500"

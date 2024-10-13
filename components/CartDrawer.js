@@ -60,7 +60,7 @@ export default function CartDrawer() {
               </h3>
               <p className="ml-4">{product.price}</p>
             </div>
-            <p className="mt-1 text-sm text-gray-500">Clothes</p>
+            <p className="mt-1 text-sm text-gray-500">{product.name}</p>
           </div>
           <div className="flex flex-1 items-end justify-between text-sm">
             <p className="text-gray-500 mt-2">
@@ -83,7 +83,7 @@ export default function CartDrawer() {
             <div className="flex">
               <button
                 type="button"
-                className="mx-3 font-medium text-gray-600 hover:text-gray-500"
+                className="mx-3 font-medium text-gray-600 hover:text-gray-500 hover:bg-[#ececec] pr-2 pl-2 rounded-full" 
                 onClick={() => removeItemFromCart(product.id)}
               >
                 Remove
@@ -140,7 +140,7 @@ export default function CartDrawer() {
                       <div className="ml-3 flex h-7 items-center">
                         <button
                           type="button"
-                          className="-m-2 p-2 text-gray-400 hover:text-gray-500"
+                          className="-m-2 p-2 text-black hover:text-[#242424]"
                           onClick={() => setGlobals({ ...globals, openCartDrawer: false })}
                         >
                           <span className="sr-only">Close panel</span>
@@ -173,7 +173,7 @@ export default function CartDrawer() {
                       <p>${calculateSubtotal()?.toFixed(2)}</p>
                     </div>
                     <p className="mt-0.5 text-sm text-gray-500">
-                      Shipping and taxes calculated at checkout.
+                      Shipping and taxes will be calculated at checkout.
                     </p>
                     <div className="mt-6">
                       <Link

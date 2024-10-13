@@ -5,8 +5,8 @@ const page = () => {
   return (
     <div className='background flex items-center justify-center h-[200px] w-full'>
         <div className='flex flex-col relative bottom-24 sm:bottom-10 xl:bottom-4 m-0 sm:m-10'>
-            <h1 className='text-6xl sm:text-6xl md:text-7xl lg:text-8xl text-black font-extrabold tracking-tighter mb-1'>
-            LIVE LIFE AT <br/> YOUR VOLUME
+            <h1 className='text-6xl sm:text-6xl md:text-7xl lg:text-8xl uppercase text-black font-extrabold tracking-tighter mb-1'>
+            Live Life ay <br/> Your Volume
             </h1>
             <p className='text-md text-gray-700 mt-4 ml-3'>Lean into everything you love thats loud <br/> with bold noise-reducing earwear.</p>
             <div className='flex items-center mt-4'>

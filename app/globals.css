@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+    color: rgb(var(--foreground-rgb));
+    font-family: 'Poppins', sans-serif;
+  }
+.background{
+  background: url('https://media.wired.com/photos/6298ef29546f32c2b76f098d/master/w_1920%2Cc_limit/LoopQuiet-Earbuds-Gear.jpg');
+  height: 85vh;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+::selection {
+  color: rgb(255, 255, 255);
+  background: rgb(0, 0, 0);
+}
+::-moz-selection{
+  color: rgb(255, 255, 255);
+  background: rgb(0, 0, 0);
+}

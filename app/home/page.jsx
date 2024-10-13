@@ -1,8 +1,12 @@
 import React from 'react'
 import Link from 'next/link'
+import AboutProduct from './AboutProduct'
+import Platforms from './Platforms'
+import Reviews from './Reviews'
 
 const page = () => {
   return (
+    <div>
     <div className='background flex items-center justify-center h-[200px] w-full'>
         <div className='flex flex-col relative bottom-10 sm:bottom-10 xl:bottom-4 m-0 sm:m-10'>
             <h1 className='text-6xl sm:text-6xl md:text-7xl lg:text-8xl uppercase text-black font-extrabold tracking-tighter mb-1'>
@@ -37,6 +41,10 @@ const page = () => {
                 <a href="/products" className='bg-[#242426] rounded-xl pt-1 pb-1 pl-3 pr-3'>Explore</a>
             </div>
         </div>
+    </div>
+        <AboutProduct/>
+        <Platforms/>
+        <Reviews/>
     </div>
   )
 }

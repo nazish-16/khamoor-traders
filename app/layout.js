@@ -13,13 +13,12 @@ import icon from '../app/images/icon.png';
 
 export default function RootLayout({ children }) {
   const [globals, setGlobals] = useState({ openCartDrawer: false, openSideBar: false, cartItems: [] });
-
   return (
     <html lang="en">
       <GlobalContext.Provider value={{ globals, setGlobals }}>
         <body className="bg-white">
           <SideBar />
-          <header aria-label="Site Header" className="border-b border-gray-100">
+          <header aria-label="Site Header" className="border-b border-gray-100 bg-gray-100">
             <div className="bg-black p-2 text-center text-sm tracking-wider text-white">FREE SHIPPING,📦 USE COUPON: <span className="bg-gray-500 rounded-md pl-2 pr-2">KM324</span></div>
             <div className="mx-auto flex h-16 max-w-screen-2xl items-center justify-between sm:px-6 lg:px-8">
               <div className="flex items-center gap-4">

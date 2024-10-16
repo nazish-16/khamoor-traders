@@ -32,7 +32,7 @@ export default function RootLayout({ children }) {
                   <img src="https://img.icons8.com/?size=100&id=3096&format=png&color=000000" className="w-5" />
                 </button>
 
-                <Link href="/home" className="flex">
+                <Link href="/" className="flex">
                   <span className="sr-only">Logo</span>
                   <span><Image src={logo} alt="logo" className='w-40' /></span>
                 </Link>
@@ -43,27 +43,26 @@ export default function RootLayout({ children }) {
                   className="hidden lg:flex lg:gap-4 lg:text-md lg:text-black"
                 >
                   <Link
-                    href="/home"
+                    href="/"
                     className="block h-16 border-b-4 border-transparent leading-[4rem] hover:text-gray-700 hover:border-b-2 hover:border-gray-500"
                   >
                     Home
                   </Link>
-
-                  <Link href="/products"
-                    className="block h-16 border-b-4 border-transparent leading-[4rem] hover:text-gray-700 hover:border-b-2 hover:border-gray-500"
-                  >
-                    Shop
-                  </Link>
                   <Link
-                    href="/about"
+                    href="/earplugs"
                     className="block h-16 border-b-4 border-transparent leading-[4rem] hover:text-gray-700 hover:border-b-2 hover:border-gray-500"
                   >
-                    Best Sellers
+                    Earplugs
                   </Link>
                   <Link href="/"
                     className="block h-16 border-b-4 border-transparent leading-[4rem] hover:text-gray-700 hover:border-b-2 hover:border-gray-500"
                   >
-                    FAQ
+                    Kitchen
+                  </Link>
+                  <Link href="/products"
+                    className="block h-16 border-b-4 border-transparent leading-[4rem] hover:text-gray-700 hover:border-b-2 hover:border-gray-500"
+                  >
+                    Shop
                   </Link>
                   <Link
                     href="/contact"

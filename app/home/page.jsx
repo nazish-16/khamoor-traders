@@ -22,7 +22,7 @@ const Page = () => {
         className="absolute top-0 left-0 w-full h-full object-cover z-0 pointer-events-none"
       >
         <source src="https://cdn.pixabay.com/video/2020/08/03/46282-446732337_large.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
+        Your browser does not support video
       </video>
 
       <div className="absolute inset-0 bg-black bg-opacity-50 z-10"></div>

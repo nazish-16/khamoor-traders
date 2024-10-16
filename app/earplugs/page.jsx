@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import Link from 'next/link'
 import AboutProduct from './AboutProduct'
@@ -46,7 +48,6 @@ const page = () => {
     </div>
         <AboutProduct/>
         <ProductUsage/>
-        <Platforms/>
         <Reviews/>
         <ProductTypes/>
     </div>

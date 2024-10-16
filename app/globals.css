@@ -6,6 +6,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
   }
 .background{
   background: url('https://elements-resized.envatousercontent.com/envato-shoebox/d295/cc0f-9878-45de-be84-176e33ad31c7/DSC01917.jpg?w=1600&cf_fit=scale-down&mark-alpha=18&mark=https%3A%2F%2Felements-assets.envato.com%2Fstatic%2Fwatermark4.png&q=85&format=auto&s=86502835fdf202602e9077846aa34be1a38350d0eca7f9b960597910f8f201f2');
@@ -14,12 +15,4 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-::selection {
-  color: rgb(255, 255, 255);
-  background: rgb(0, 0, 0);
-}
-::-moz-selection{
-  color: rgb(255, 255, 255);
-  background: rgb(0, 0, 0);
 }

@@ -9,7 +9,6 @@ import Link from "next/link";
 import Image from "next/image";
 import Head from "next/head";
 import logo from './images/logo.png';
-import icon from '../app/images/icon.png'; 
 
 export default function RootLayout({ children }) {
   const [globals, setGlobals] = useState({ openCartDrawer: false, openSideBar: false, cartItems: [] });
@@ -18,8 +17,8 @@ export default function RootLayout({ children }) {
       <GlobalContext.Provider value={{ globals, setGlobals }}>
         <body className="bg-white">
           <SideBar />
-          <header aria-label="Site Header" className="border-b border-gray-100 bg-gray-100">
-            <div className="bg-black p-2 text-center text-sm tracking-wider text-white">FREE SHIPPING,📦 USE COUPON: <span className="bg-gray-500 rounded-md pl-2 pr-2">KM324</span></div>
+          <header aria-label="Site Header" className="border-b border-gray-100 bg-[#f5f6f7]">
+            <div className="bg-black p-2 text-center text-sm tracking-widest text-white"> FREE SHIPPING UK. LIMITED STOCK REMAINING</div>
             <div className="mx-auto flex h-16 max-w-screen-2xl items-center justify-between sm:px-6 lg:px-8">
               <div className="flex items-center gap-4">
                 <button
@@ -32,7 +31,7 @@ export default function RootLayout({ children }) {
                   <img src="https://img.icons8.com/?size=100&id=3096&format=png&color=000000" className="w-5" />
                 </button>
 
-                <Link href="/" className="flex">
+                <Link href="/home" className="flex">
                   <span className="sr-only">Logo</span>
                   <span><Image src={logo} alt="logo" className='w-40' /></span>
                 </Link>
@@ -43,7 +42,7 @@ export default function RootLayout({ children }) {
                   className="hidden lg:flex lg:gap-4 lg:text-md lg:text-black"
                 >
                   <Link
-                    href="/"
+                    href="/home"
                     className="block h-16 border-b-4 border-transparent leading-[4rem] hover:text-gray-700 hover:border-b-2 hover:border-gray-500"
                   >
                     Home

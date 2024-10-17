@@ -32,7 +32,7 @@ export default function RootLayout({ children }) {
 
                 <Link href="/home" className="flex">
                   <span className="sr-only">Logo</span>
-                  <span><Image src={logo} alt="logo" className='w-40' /></span>
+                  <span><Image src={logo} alt="logo" className="w-40" /></span>
                 </Link>
               </div>
               <div className="flex flex-1 items-center justify-end gap-2">

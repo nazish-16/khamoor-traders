@@ -46,10 +46,10 @@ const Info = () => {
           Welcome to <b>Khamoor Traders</b>, your trusted supplier of high-quality earplugs. We are committed to providing top-notch products that ensure comfort, safety, and reliability in every use.
         </p>
         <p>
-          Our mission is to cater to the growing demand for ear protection, offering a wide range of products for personal and professional use. Whether you're looking for protection against loud environments or seeking comfort during sleep, we've got you covered.
+          Our mission is to cater to the growing demand for ear protection, offering a wide range of products for personal and professional use. Whether youre looking for protection against loud environments or seeking comfort during sleep, we have got you covered.
         </p>
         <p>
-          With years of experience and a dedication to quality, Khamoor Traders has built a reputation for excellence, customer satisfaction, and innovation. We're here to protect your hearing and provide the best solutions for your needs.
+          With years of experience and a dedication to quality, Khamoor Traders has built a reputation for excellence, customer satisfaction, and innovation. Were here to protect your hearing and provide the best solutions for your needs.
         </p>
       </motion.div>
       <motion.div 

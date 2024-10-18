@@ -3,14 +3,19 @@
 import React from 'react'
 import Link from 'next/link'
 import AboutProduct from './AboutProduct'
-import Platforms from './Platforms'
 import Reviews from './Reviews'
 import ProductTypes from './ProductTypes'
 import ProductUsage from './ProductUsage'
+import Footer from 'app/home/Footer'
+import { motion } from 'framer-motion';
 
 const page = () => {
   return (
     <div>
+        <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1.2, ease: 'easeInOut' }}>
     <div className='background flex items-center justify-center h-[200px] w-full'>
         <div className='flex flex-col relative bottom-10 sm:bottom-10 xl:bottom-16 m-0 sm:m-10'>
             <h1 className='text-6xl sm:text-6xl md:text-7xl lg:text-8xl uppercase text-black font-extrabold tracking-tighter mb-1'>
@@ -50,6 +55,8 @@ const page = () => {
         <ProductUsage/>
         <Reviews/>
         <ProductTypes/>
+        <Footer/>
+    </motion.div>
     </div>
   )
 }

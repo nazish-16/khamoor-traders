@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 
 const Info = () => {
   return (
-    <div className="h-full w-full flex items-center justify-center flex-col p-8 bg-gradient-to-r from-gray-100 via-white to-gray-200 pt-12">
+    <div className="h-full w-full flex items-center justify-center flex-col p-8 bg-gradient-to-r from-gray-100 via-white to-gray-200 pt-12" id='about'>
       <motion.h1 
         className="text-black text-5xl font-bold pb-6"
         initial={{ opacity: 0, y: -50 }}

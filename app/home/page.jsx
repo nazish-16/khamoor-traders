@@ -5,6 +5,7 @@ import Link from 'next/link';
 import Platforms from 'app/earplugs/Platforms';
 import Info from './Info';
 import { motion } from 'framer-motion';
+import Clients from './Clients';
 
 const Page = () => {
   return (
@@ -46,6 +47,7 @@ const Page = () => {
     </div>
     <Info/>
     <Platforms/>
+    <Clients/>
     </div>
     </motion.div>
   );

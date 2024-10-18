@@ -12,7 +12,7 @@ const Info = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: 'easeInOut' }}
       >
-        <span className='text-black text-5xl font-bold pb-8'><span className='text-[#ef4444]'>A</span><span className='text-[#3b82f6]'>bout Us</span></span>
+        <span className='text-black text-5xl font-bold pb-8'>About Us</span>
       </motion.h1>
       <motion.div 
         className="w-full max-w-6xl hidden lg:flex justify-around items-center pb-10"

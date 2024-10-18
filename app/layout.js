@@ -7,7 +7,6 @@ import SideBar from "../components/SideBar";
 import CartDrawer from "../components/CartDrawer";
 import Link from "next/link";
 import Image from "next/image";
-import Head from "next/head";
 import logo from './images/logo.png';
 
 export default function RootLayout({ children }) {
@@ -18,7 +17,6 @@ export default function RootLayout({ children }) {
         <body className="bg-white">
           <SideBar />
           <header aria-label="Site Header" className="border-b border-gray-100 bg-[#f5f6f7]">
-            <div className="bg-black p-2 text-center text-sm tracking-widest text-white">FREE SHIPPING UK. LIMITED STOCK REMAINING</div>
             <div className="mx-auto flex h-16 max-w-screen-2xl items-center justify-between sm:px-6 lg:px-8">
               <div className="flex items-center gap-4">
                 <button
@@ -30,7 +28,6 @@ export default function RootLayout({ children }) {
                 >
                   <img src="https://img.icons8.com/?size=100&id=3096&format=png&color=000000" className="w-5" />
                 </button>
-
                 <Link href="/home" className="flex">
                   <span className="sr-only">Logo</span>
                   <span><Image src={logo} alt="logo" className="w-40" /></span>

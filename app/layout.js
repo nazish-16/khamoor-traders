@@ -11,11 +11,17 @@ import logo from './images/logo.png';
 
 export default function RootLayout({ children }) {
   const [globals, setGlobals] = useState({ openCartDrawer: false, openSideBar: false, cartItems: [] });
-  const [showDropdown, setShowDropdown] = useState(false); // State for the dropdown
+  const [showDropdown, setShowDropdown] = useState(false); // State for the main dropdown
+  const [showHealthSubDropdown, setShowHealthSubDropdown] = useState(false); // State for the health sub-dropdown
 
   const handleDropdownToggle = (e) => {
     e.preventDefault(); // Prevent default link behavior
-    setShowDropdown(prev => !prev); // Toggle dropdown
+    setShowDropdown(prev => !prev); // Toggle main dropdown
+  };
+
+  const handleHealthDropdownToggle = (e) => {
+    e.preventDefault(); // Prevent default link behavior
+    setShowHealthSubDropdown(prev => !prev); // Toggle health sub-dropdown
   };
 
   return (
@@ -56,16 +62,29 @@ export default function RootLayout({ children }) {
                       onClick={handleDropdownToggle} // Toggle dropdown on button click
                       className="block h-16 border-b-4 border-transparent leading-[4rem] hover:text-gray-700 hover:border-b-2 hover:border-gray-500"
                     >
-                      Shop &darr;
+                      Products &darr;
                     </button>
                     {showDropdown && (
                       <div className="absolute left-0 mt-2 w-48 bg-white border border-gray-200 shadow-lg rounded-md z-10">
-                        <Link href="/earplugs" className="block px-4 py-2 hover:bg-gray-100" onClick={() => setShowDropdown(false)}>Earplugs</Link>
-                        <Link href="/products" className="block px-4 py-2 hover:bg-gray-100" onClick={() => setShowDropdown(false)}>Kitchen</Link>
+                        <Link href="#" className="block px-4 py-2 hover:bg-gray-100" onClick={handleHealthDropdownToggle}>
+                          Health Products &rarr;
+                        </Link>
+                        {showHealthSubDropdown && (
+                          <div className="absolute left-full top-0 mt-0 w-48 bg-white border border-gray-200 shadow-lg rounded-md z-20">
+                            <Link href="/earplugs" className="block px-4 py-2 hover:bg-gray-100" onClick={() => setShowDropdown(false)}>Earplugs</Link>
+                          </div>
+                        )}
+                        <Link href="/" className="block px-4 py-2 hover:bg-gray-100" onClick={() => setShowDropdown(false)}>Kitchen Modular</Link>
                         <Link href="#" className="block px-4 py-2 hover:bg-gray-100" onClick={() => setShowDropdown(false)}>Makeup</Link>
                       </div>
                     )}
                   </div>
+                  <Link
+                    href="/products"
+                    className="block h-16 border-b-4 border-transparent leading-[4rem] hover:text-gray-700 hover:border-b-2 hover:border-gray-500"
+                  >
+                    Shop
+                  </Link>
                   <Link
                     href="/privacy"
                     className="block h-16 border-b-4 border-transparent leading-[4rem] hover:text-gray-700 hover:border-b-2 hover:border-gray-500"

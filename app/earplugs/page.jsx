@@ -3,7 +3,6 @@
 import React from 'react'
 import Link from 'next/link'
 import AboutProduct from './AboutProduct'
-import Reviews from './Reviews'
 import ProductTypes from './ProductTypes'
 import ProductUsage from './ProductUsage'
 import Footer from 'app/home/Footer'
@@ -53,7 +52,6 @@ const page = () => {
     </div>
         <AboutProduct/>
         <ProductUsage/>
-        <Reviews/>
         <ProductTypes/>
         <Footer/>
     </motion.div>

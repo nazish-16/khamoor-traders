@@ -3,11 +3,11 @@
 import React, { useState, useEffect } from 'react';
 
 const images = [
-  'https://loopearplugs.in/cdn/shop/files/Use_Cases_Desk_1_33376123-e9cd-44cf-b35d-e150ea1705cc.jpg?v=1701795864&width=1100',
-  'https://loopearplugs.in/cdn/shop/files/Use_Cases_Desk_2_cbbe430c-f1af-431d-a372-c9b6ace39bc7.jpg?v=1701795894&width=1100',
-  'https://loopearplugs.in/cdn/shop/files/Use_Cases_Desk_3_eec3c77c-a8fe-4488-959b-53f3f8867fda.jpg?v=1701795908&width=1100',
-  'https://loopearplugs.in/cdn/shop/files/Use_Cases_Desk_4_4cfb1d99-86dc-4699-9201-e8df80f003ad.jpg?v=1701795920&width=1100',
-  'https://loopearplugs.in/cdn/shop/files/Use_Cases_Desk_5_5c671be3-690c-49aa-bf39-ec8a32a014f8.jpg?v=1701795932&width=1100'
+  'https://m.media-amazon.com/images/S/aplus-media-library-service-media/efa2edbd-c2d4-4ef5-86b9-9f46f79443a5.__CR0,0,970,600_PT0_SX970_V1___.jpeg',
+  'https://m.media-amazon.com/images/S/aplus-media-library-service-media/fe8e5386-7f77-4626-8eea-63f2d3a4ddc3.__CR0,0,970,600_PT0_SX970_V1___.jpeg',
+  'https://m.media-amazon.com/images/S/aplus-media-library-service-media/70f3caff-cb28-4328-b162-23efe76ee7eb.__CR0,0,970,600_PT0_SX970_V1___.jpeg',
+  'https://m.media-amazon.com/images/S/aplus-media-library-service-media/2130620b-8a85-4c03-9e0f-813f7843d1f6.__CR0,0,970,600_PT0_SX970_V1___.jpeg',
+  'https://m.media-amazon.com/images/S/aplus-media-library-service-media/aa011992-6590-4665-8741-35aa4a60ca97.__CR0,0,970,600_PT0_SX970_V1___.jpeg'
 ];
 
 const ProductUsage = () => {

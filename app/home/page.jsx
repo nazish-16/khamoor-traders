@@ -5,7 +5,6 @@ import Link from 'next/link';
 import Platforms from 'app/earplugs/Platforms';
 import Info from './Info';
 import { motion } from 'framer-motion';
-import Clients from './Clients';
 import Testimonials from './Testimonials';
 import Footer from './Footer';
 
@@ -49,7 +48,6 @@ const Page = () => {
     </div>
     <Info/>
     <Platforms/>
-    <Clients/>
     <Testimonials/>
     <Footer/>
     </div>
